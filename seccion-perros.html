@@ -4,7 +4,7 @@
         <title>ONG Ayuda a un peludo - Perros</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">     
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,23 +14,23 @@
     </head>
     <body>
         <div class="container bg-light d-flex flex-column sticky-footer-wrapper min-vh-100">
-            
+
             <header class="jumbotron">
-                
+
                 <h1 class="text-center">
                     <img src="img/logo.png" class="rounded-circle" alt="logo"/>
                     <span class="text-nowrap">ONG Ayuda a un Peludo</span>
                 </h1>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Aliquam repellat earum fuga? Nihil adipisci in ut labore nobis,
-                    earum eos possimus ex eum eveniet delectus suscipit mollitia perspiciatis, 
+                    earum eos possimus ex eum eveniet delectus suscipit mollitia perspiciatis,
                     repellat vitae!
                 </p>
             </header>
 
             <nav class="navbar navbar-expand-md bg-light">
-                
+
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.png" class="rounded-circle" width="80" alt="Logo" />
                 </a>
@@ -51,9 +51,12 @@
                             <a class="dropdown-item" href="seccion-gatos.html">Gatos</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
 
                     <li class="nav-item">
-                        
+
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -65,8 +68,16 @@
                     <section>
                         <h2>
                             Perros
-                        </h2> 
-
+                        </h2>
+                        <div class="container-fluid">
+                          <div class="">
+                            Raza:
+                          </div>
+                          <select name="combo_pulento" id="combo_pulento" onchange="buscar()" class="w-100">
+                            <option value="empty" selected>-- Seleccione una raza --</option>
+                            <option value="all">Cualquiera</option>
+                          </select>
+                        </div>
                         <table id="lista-perros" class="table text-center">
 
                         </table>
@@ -81,7 +92,7 @@
                         Instituto Profesional Duoc UC
                 </div>
             </div>
-        </footer>   
+        </footer>
         </div>
     </body>
 </html>

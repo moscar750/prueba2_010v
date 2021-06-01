@@ -15,21 +15,21 @@
     <body>
         <div class="container bg-light d-flex flex-column sticky-footer-wrapper min-vh-100">
             <header class="jumbotron">
-                
+
                 <h1 class="text-center">
                     <img src="img/logo.png" class="rounded-circle" alt="logo"/>
                     <span class="text-nowrap">ONG Ayuda a un Peludo</span>
                 </h1>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Aliquam repellat earum fuga? Nihil adipisci in ut labore nobis,
-                    earum eos possimus ex eum eveniet delectus suscipit mollitia perspiciatis, 
+                    earum eos possimus ex eum eveniet delectus suscipit mollitia perspiciatis,
                     repellat vitae!
                 </p>
             </header>
 
             <nav class="navbar navbar-expand-md bg-light">
-                
+
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.png" class="rounded-circle" width="80" alt="Logo" />
                 </a>
@@ -50,23 +50,34 @@
                             <a class="dropdown-item active" href="seccion-gatos.html">Gatos</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
 
                     <li class="nav-item">
-                        
+
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
-            <main class="flex-fill">            
+            <main class="flex-fill">
                 <div class="row">
                     <div class="col-12">
                         <section>
                             <h2>
                                 Gatos
-                            </h2> 
-                            
+                            </h2>
+                            <div class="container-fluid">
+                              <div class="">
+                                Raza:
+                              </div>
+                              <select name="combo_pulento" id="combo_pulento" onchange="buscar()" class="w-100">
+                                <option value="empty" selected>-- Seleccione una raza --</option>
+                                <option value="all">Cualquiera</option>
+                              </select>
+                            </div>
                             <table  id="lista-gatos" class="table text-center">
-                                
+
                             </table>
                         </section>
                     </div>
@@ -79,7 +90,7 @@
                             Instituto Profesional Duoc UC
                     </div>
                 </div>
-            </footer>   
+            </footer>
         </div>
     </body>
 </html>
